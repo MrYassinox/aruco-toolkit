@@ -7,27 +7,27 @@
 ########################################################################################################################
 # TODO IMPORTING NECESSARY LIBRARYIES
 ########################################################################################################################
-# => NOTE python libraryies
+# LIB => python libraryies
 import os
 import sys
 import argparse
 import time
 from typing import List, Any, Dict, Callable, Union, Tuple, Iterable, Literal, Optional
 
-# => NOTE squardot-utils-standard libraryies
-from utils_standard.modules.utils import loggerHandle
+# LIB => squardot-utils-standard libraryies
+from utils_standard.modules.utils import LoggerHandle
 
-# => NOTE opencv libraryies
+# LIB => opencv libraryies
 import cv2
 
-# => NOTE imutils libraryies
+# LIB => imutils libraryies
 import imutils
 
-# => NOTE numpy libraryies
+# LIB => numpy libraryies
 import numpy as np
 
 ########################################################################################################################
-# TODO Set Up
+# TODO SET UP
 ########################################################################################################################
 # NOTE => define names of each possible ArUco tag OpenCV supports
 TYPE_ARUCO_DICT = {
@@ -82,14 +82,14 @@ DICT_APRILTAG_36h10 = 'DICT_APRILTAG_36h10'
 DICT_APRILTAG_36h11 = 'DICT_APRILTAG_36h11'
 DICT_ARUCO_ORIGINAL = 'DICT_ARUCO_ORIGINAL'
 
-logger = loggerHandle(context='ArUco')
+logger = LoggerHandle(context='ArUco')
 
 ########################################################################################################################
-# TODO function models
+# TODO FUNCTIONS MODULES
 ########################################################################################################################
 
 ########################################################################################################################
-# TODO classes models
+# TODO CLASSES MODULES
 ########################################################################################################################
 class ArUcoMarkers:
     """Class for generating and detecting ArUco markers using OpenCV"""
@@ -170,11 +170,11 @@ class ArUcoMarkers:
             Exception: If an error occurs during marker generation.
 
         Example:
-            ```python
-                from aruco_toolkit.modules.toolkit import DICT_4X4_50
-                aruco = ArUcoMarkers()
-                aruco.generate_markers(type_aruco=DICT_4X4_50, marker_aruco_id=1, size_marker=100, output_path="markers")
-            ```
+        ```python
+            from aruco_toolkit.modules.toolkit import DICT_4X4_50
+            aruco = ArUcoMarkers()
+            aruco.generate_markers(type_aruco=DICT_4X4_50, marker_aruco_id=1, size_marker=100, output_path="markers")
+        ```
         """
         try:
             # DESC => verify that the supplied ArUCo tag exists and is supported by OpenCV
@@ -298,7 +298,7 @@ class ArUcoMarkers:
             detector.detected_markers_image(image="markers.jpg", type_aruco=DICT_4X4_50, resize=800, show=True)
         ```
 
-        Note:
+        Notes:
             - The `image` parameter should specify the filename of the image in a supported format (e.g., JPEG, PNG).
             - The `type_aruco` parameter can be either a predefined ArUco dictionary from OpenCV or a custom dictionary filename.
                 Supported predefined dictionaries are: DICT_4X4_50, DICT_4X4_100, DICT_4X4_250, DICT_4X4_1000, DICT_5X5_50,
@@ -403,7 +403,7 @@ class ArUcoMarkers:
             detector.detected_markers_camera(type_aruco=DICT_4X4_50, cameraID=0, resize=800)
         ```
 
-        Note:
+        Notes:
             - The `type_aruco` parameter can be either a predefined ArUco dictionary from OpenCV or a custom dictionary filename.
                 Supported predefined dictionaries are: DICT_4X4_50, DICT_4X4_100, DICT_4X4_250, DICT_4X4_1000, DICT_5X5_50,
                 DICT_5X5_100, DICT_5X5_250, DICT_5X5_1000, DICT_6X6_50, DICT_6X6_100, DICT_6X6_250, DICT_6X6_1000,
@@ -521,7 +521,7 @@ class ArUcoMarkers:
             print(marker_ids)
         ```
 
-        Note:
+        Notes:
             - The `type_aruco` parameter can be either a predefined ArUco dictionary from OpenCV or a custom dictionary filename.
                 Supported predefined dictionaries are: DICT_4X4_50, DICT_4X4_100, DICT_4X4_250, DICT_4X4_1000, DICT_5X5_50,
                 DICT_5X5_100, DICT_5X5_250, DICT_5X5_1000, DICT_6X6_50, DICT_6X6_100, DICT_6X6_250, DICT_6X6_1000,
@@ -619,7 +619,7 @@ class ArUcoMarkers:
             scanner.detected_markers_scanner_live(type_aruco=DICT_4X4_50, cameraID=0, resize=800)
         ```
 
-        Note:
+        Notes:
             - The `type_aruco` parameter can be either a predefined ArUco dictionary from OpenCV or a custom dictionary filename.
                 Supported predefined dictionaries are: DICT_4X4_50, DICT_4X4_100, DICT_4X4_250, DICT_4X4_1000, DICT_5X5_50,
                 DICT_5X5_100, DICT_5X5_250, DICT_5X5_1000, DICT_6X6_50, DICT_6X6_100, DICT_6X6_250, DICT_6X6_1000,
@@ -714,7 +714,7 @@ class ArUcoMarkers:
             print(f"Detected ArUco type: {aruco_type}")
         ```
 
-        Note:
+        Notes:
             - The `image` parameter should be a file path pointing to an image file containing ArUco markers.
             - The method returns the name of the detected ArUco dictionary type.
             - If multiple ArUco dictionaries are detected in the image, the method returns the type of the first dictionary found.

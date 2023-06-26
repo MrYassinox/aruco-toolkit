@@ -29,4 +29,7 @@ git+https://github.com/MrYassinox/utils-standard.git@main
 #/ GitPython
 #/ ffmpeg
 #/ invisible-watermark
+lazydocs>=0.4.8
+pydocstyle>=6.3.0
+
 -e .

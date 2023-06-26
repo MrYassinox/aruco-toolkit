@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 name = "squardot-aruco-toolkit"
 
 # DESC | The version of the package. Required
-version = "1.0.5"
+version = "1.0.6"
 
 # DESC | A short description of the package. Required
 description = "squardot-aruco-toolkit: is a Python package that provides functionality for generating and detecting ArUco markers using OpenCV."

@@ -17,3 +17,4 @@ workflow.code-workspace
 .env.test.local
 .env.production.local
 .environment
+generate_docs.py

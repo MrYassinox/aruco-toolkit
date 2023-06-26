@@ -1,8 +1,14 @@
+<div align="center">
+
 # Project Card
 [![GitHub license](https://img.shields.io/github/license/MrYassinox/aruco-toolkit?color=blue)](./LICENSE)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MrYassinox/aruco-toolkit/main?color=success&style=flat)
 ![GitHub Latest Release](https://img.shields.io/github/v/release/MrYassinox/aruco-toolkit)
 ![GitHub Release Date](https://img.shields.io/github/release-date/MrYassinox/aruco-toolkit?color=success&style=flat)
+
+[Features](#features) - [Installation](#installation) - [Documentation](#documentation) - [Credits](#credits) - [License](#license)
+
+</div>
 
 **squardot-aruco-toolkit**: is a Python package that provides functionality for generating and detecting ArUco markers using OpenCV.
 
@@ -40,7 +46,8 @@ pip install -e .  # go to inside project repository directory and run this comma
   - Python version : ``^3.9``
 
 # Documentation
-The documentation has not available currently.
+The documentation available here: [documentation](./doc/api/documentation.md)
+<!-- The documentation has not available currently. -->
 
 # Credits
 
