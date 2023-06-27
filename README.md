@@ -46,7 +46,7 @@ pip install -e .  # go to inside project repository directory and run this comma
   - Python version : ``^3.9``
 
 # Documentation
-The documentation available here: [documentation](./doc/api/documentation.md)
+The documentation available here: [documentation](./doc/api/)
 <!-- The documentation has not available currently. -->
 
 # Credits
