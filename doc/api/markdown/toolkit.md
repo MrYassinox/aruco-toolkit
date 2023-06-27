@@ -2,10 +2,8 @@
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-# <kbd>module</kbd> `toolkit.py`
-
-
-
+# <kbd>module</kbd> `toolkit`
+generating and detecting ArUco markers using OpenCV.  
 
 **Global Variables**
 ---------------
@@ -35,12 +33,14 @@
 
 ---
 
+<a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L94"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+
 ## <kbd>class</kbd> `ArUcoMarkers`
 Class for generating and detecting ArUco markers using OpenCV 
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L96"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `__init__`
+### <kbd>method</kbd> `__init__`
 
 ```python
 __init__(logs: bool = True)
@@ -61,7 +61,7 @@ Initialize the ArUcoMarkers object.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L698"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `detected_aruco_type`
+### <kbd>method</kbd> `detected_aruco_type`
 
 ```python
 detected_aruco_type(image: str)
@@ -106,7 +106,7 @@ Detects the type of ArUco markers present in the given image.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L210"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `detected_markers`
+### <kbd>method</kbd> `detected_markers`
 
 ```python
 detected_markers(
@@ -164,7 +164,7 @@ Detects ArUco markers in an image.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L385"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `detected_markers_camera`
+### <kbd>method</kbd> `detected_markers_camera`
 
 ```python
 detected_markers_camera(
@@ -213,7 +213,7 @@ Detects ArUco markers in real-time using a camera stream.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L279"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `detected_markers_image`
+### <kbd>method</kbd> `detected_markers_image`
 
 ```python
 detected_markers_image(
@@ -264,7 +264,7 @@ Detects ArUco markers in an image.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L502"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `detected_markers_scanner`
+### <kbd>method</kbd> `detected_markers_scanner`
 
 ```python
 detected_markers_scanner(
@@ -315,7 +315,7 @@ Scans ArUco markers using a camera stream and returns the detected marker IDs.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L601"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `detected_markers_scanner_live`
+### <kbd>method</kbd> `detected_markers_scanner_live`
 
 ```python
 detected_markers_scanner_live(
@@ -364,7 +364,7 @@ Continuously scans ArUco markers using a live camera stream.
 
 <a href="https://github.com/MrYassinox/aruco-toolkit/blob/main\aruco_toolkit\modules\toolkit.py#L159"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>function</kbd> `generate_markers`
+### <kbd>method</kbd> `generate_markers`
 
 ```python
 generate_markers(

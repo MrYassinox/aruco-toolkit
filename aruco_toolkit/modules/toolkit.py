@@ -1,3 +1,4 @@
+''' generating and detecting ArUco markers using OpenCV. '''
 ########################################################################################################################
 # TODO DOCUMENT
 ########################################################################################################################
@@ -10,7 +11,6 @@
 # LIB => python libraryies
 import os
 import sys
-import argparse
 import time
 from typing import List, Any, Dict, Callable, Union, Tuple, Iterable, Literal, Optional
 

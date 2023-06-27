@@ -29,6 +29,8 @@ git+https://github.com/MrYassinox/utils-standard.git@main
 #/ GitPython
 #/ ffmpeg
 #/ invisible-watermark
+pdocs>=1.2.0
+Pygments>=2.15.1
 lazydocs>=0.4.8
 pydocstyle>=6.3.0
 
