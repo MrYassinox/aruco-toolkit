@@ -2,7 +2,8 @@
 
 # => DESC | python
 **/__pycache__/
-/aruco_toolkit/**/__pycache__/
+/**/**/__pycache__/
+**.egg-info
 
 # => DESC | visual code
 .vscode

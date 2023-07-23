@@ -1,5 +1,0 @@
-python-dotenv>=0.21.1
-numpy>=1.24.1
-opencv-contrib-python>=4.7.0.68
-imutils>=0.5.4
-squardot-utils-standard@ git+https://github.com/MrYassinox/utils-standard#egg=main

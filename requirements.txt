@@ -5,17 +5,21 @@ setuptools
 build
 
 ########################################################################################################################
-# => NOTE dependencies first:
+# => NOTE dependencies for build script:
 ########################################################################################################################
-python-dotenv>=0.21.1
-numpy>=1.24.1
-opencv-contrib-python>=4.7.0.68 # <= DESC | standard packages [standard packages: opencv-python or full packages: opencv-contrib-python]
+python-dotenv>=1.0.0
+numpy>=1.24.3
+opencv-contrib-python>=4.7.0.72 # <= DESC | standard packages [standard packages: opencv-python or full packages: opencv-contrib-python]
 imutils>=0.5.4
-git+https://github.com/MrYassinox/utils-standard.git@main
+git+https://github.com/MrYassinox/utils-standard.git@v1.1.2
 
 ########################################################################################################################
-# => NOTE dependencies seconde:
+# => NOTE dependencies for build docs:
 ########################################################################################################################
+# pdocs>=1.2.0
+# Pygments>=2.15.1
+# lazydocs>=0.4.8
+# pydocstyle>=6.3.0
 
 ########################################################################################################################
 # => NOTE dependencies whl:
@@ -25,13 +29,4 @@ git+https://github.com/MrYassinox/utils-standard.git@main
 ########################################################################################################################
 # => NOTE dependencies optional:
 ########################################################################################################################
-#/ gdown
-#/ GitPython
-#/ ffmpeg
-#/ invisible-watermark
-pdocs>=1.2.0
-Pygments>=2.15.1
-lazydocs>=0.4.8
-pydocstyle>=6.3.0
-
 -e .
